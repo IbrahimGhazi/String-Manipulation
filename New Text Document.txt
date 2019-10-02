@@ -1,0 +1,27 @@
+Module Module1
+
+    Sub Main()
+        Dim str1, str2, Nextchar As String
+        Dim counter As Integer
+
+        str1 = ""
+        str2 = ""
+        Nextchar = ""
+        counter = 0
+
+
+        Console.Write("Enter your string:")
+        str1 = Console.ReadLine
+
+        For counter = Len(str1) To 1 Step -1
+            Nextchar = Mid(str1, counter, 1)
+            str2 = str2 & Nextchar
+
+        Next
+
+        Console.Write("Your answer is: ")
+        Console.WriteLine(str2)
+        Console.ReadLine()
+    End Sub
+
+End Module
